@@ -1,0 +1,137 @@
+.footer {
+    padding: 15px 0px;
+    border-bottom: 2px solid #00000026;
+    border-top: 2px solid #00000026;
+    margin-bottom: 30px;
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.container {
+}
+.wrapper-footer {
+
+    // .wrapper-footer__item
+
+    &__item {
+    }
+}
+.item-footer {
+
+    // .item-footer__title
+
+    &__title {
+        font-size: 20px;
+        color: var(--text-color);
+        font-weight: 600;
+        line-height: 16px;
+        margin-bottom: 25px;
+    }
+
+    // .item-footer__nav
+
+    &__nav {
+    }
+
+    // .item-footer__contact
+
+    &__contact {
+    }
+
+    // .item-footer__social
+
+    &__social {
+    }
+
+    // .item-footer__logo
+
+    &__logo {
+    }
+
+    // .item-footer__download
+
+    &__download {
+        font-weight: 500;
+        max-width: 300px;
+    }
+
+    // .item-footer__programm
+
+    &__programm {
+    }
+}
+.nav-footer {
+    display: flex;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    // .nav-footer__item
+
+    &__item {
+    }
+
+    // .nav-footer__link
+
+    &__link {
+        font-size: 16px;line-height: 16px;
+        color: var(--text-color) !important;
+        font-weight: 500;
+    }
+}
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    // .contact-footer__phone
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    // .contact-footer__descr
+
+    &__descr {
+        font-weight: 500;
+    }
+
+    // .contact-footer__ph0ne
+
+    &__ph0ne {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 16px;
+        color: var(--text-color) !important;
+    }
+
+    // .contact-footer__time
+
+    &__time {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 16px;
+        color: var(--text-color) !important;
+    }
+}
+.programm-footer {
+
+    // .programm-footer__img
+
+    &__img {
+    }
+}
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+}

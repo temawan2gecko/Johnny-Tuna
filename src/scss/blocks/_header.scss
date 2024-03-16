@@ -1,0 +1,262 @@
+.header {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00000026;
+    margin-bottom: 25px;
+    // .header__top
+
+    &__top {
+    }
+
+    // .header__bottom
+
+    &__bottom {
+    }
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    // .top-header__logo
+
+    &__logo {
+    }
+
+    // .top-header__img
+
+    &__img {
+    }
+
+    // .top-header__nav
+
+    &__nav {
+    }
+
+    // .top-header__active
+
+    &__active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: right;
+    }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    padding: 20px 10px;
+    border-radius: 7px;
+    border: 1px solid var(--accent-blue);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    & a {
+        transition: color 0.6s ease-in-out 0s;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+}
+.dropdown-content.show {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.nav-header {
+    // .nav-header__list
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    // .nav-header__item
+
+    &__item {
+    }
+
+    // .nav-header__dropdown
+
+    &__dropdown {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        padding-left: 25px;
+        padding-right: 20px;
+        position: relative;
+        line-height: 16px;
+        height: 24px;
+        transition: color 0.6s ease-in-out 0s;
+        &:hover {
+            color: var(--text-color);
+        }
+        &::before{
+            content: url(../../img/header/location.svg);
+            position: absolute;
+            height: 24px;
+            left: 0;
+            bottom:0;
+        }
+        &::after {
+            content: url(../../img/header/arrow_dropdown.png);
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+    }
+
+    // .nav-header__link
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        transition: color 0.6s ease-in-out 0s;
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+}
+.active-header {
+
+    // .active-header__phone
+
+    &__phone {
+        color: var(--text-color) !important;
+        font-size: 24px;
+        font-weight: 600;
+        transition: transform 0.6s ease 0s;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    // .active-header__descr
+
+    &__descr {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // .bottom-header__nav
+
+    &__nav {
+    }
+
+    // .bottom-header__profile
+
+    &__profile {
+    }
+}
+.nav-bottom {
+
+    // .nav-bottom__list
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    // .nav-bottom__item
+
+    &__item {
+    }
+
+    // .nav-bottom__link
+
+    &__link {
+        font-size: 18px;
+        color: var(--text-color) !important;
+        line-height: 20px;
+        font-weight: 600;
+        transition: transform 0.4s ease 0s;
+        display: inline-block;
+        &:hover {
+            transform: scale(1.02) !important;
+        }
+    }
+}
+.profile-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    // .profile-header__item
+
+    &__item {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+}
+.item-header {
+    // .item-header__img
+    &__img {
+        width: 26px;
+        height: 26px;
+    }
+
+    // .item-header__descr
+
+    &__descr {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    // .item-header__span
+
+    &__span {
+        position: absolute;
+        right: -10px;
+        top: 0;
+        width: 25px;
+        height: 18px;
+        color: white;
+        background-color: var(--accent-orange);
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+.header-price {
+    position: relative;
+}
+.descr-header {
+
+    // .descr-header__user
+
+    &__user {
+        position: relative;
+        padding-right: 20px;
+        &::after {
+            content: url(../../img/header/molnia.svg);
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+        }
+    }
+}
